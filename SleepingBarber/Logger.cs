@@ -13,9 +13,10 @@ namespace SleepingBarber
         private string _fullFilePath;
         private Stopwatch _stopwatch;
         private Mutex _mut;
-        public Logger(string _fullFilePath)
+        public Logger(string _directoryPath)
         {
-            this._fullFilePath = _fullFilePath;
+            Directory.CreateDirectory(_directoryPath);
+            _fullFilePath = $@"{_directoryPath}SleepingBarber_{DateTime.Now:yyyyMMdd_HHmmss}.txt";
             _stopwatch = new Stopwatch();
             _mut = new Mutex();
         }

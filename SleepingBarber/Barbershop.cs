@@ -30,7 +30,7 @@ namespace SleepingBarber
             _sleepingTime = new Stopwatch();
             _customersWaiting = new List<Thread>();
             _customersHairsCut = 0;
-            _logger = new Logger($@"C:\Users\Public\Log Barbershop\SleepingBarber_{DateTime.Now:yyyyMMdd_HHmmss}.txt");
+            _logger = new Logger($@"C:\Users\Public\Log Barbershop\");
         }
 
         public void StartBarbershopActivity(TimeSpan timeOfActivity)

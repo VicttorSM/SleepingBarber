@@ -53,7 +53,7 @@ namespace SleepingBarber
                 }
             }
 
-            _logger.Log("The barbershop will not receive any more costumers");
+            _logger.Log("The barbershop will not receive any more customers");
 
             while (!_sleepingTime.IsRunning) { }
 
